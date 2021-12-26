@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <script src="src/jquery.js"></script>
+    <link rel="stylesheet" href="src/order.css" type="text/css">
+    <link rel="icon" href="images/icon.png"
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        function check() {
+            let name = document.getElementById("name");
+            let email = document.getElementById("email");
+            let phone = document.getElementById("phone");
+
+            if (name.value !== '' && phone.value !== '' && email.value !== '')
+            {
+                alert('Данные успешно отправлены');
+            }
+            if (name.value === "")
+            {
+                name.style.backgroundColor = "#c94f4f";
+                name.style.color = "white";
+                alert("Не введено имя");
+
+            }
+            else {
+                name.style.backgroundColor = "white";
+                name.style.color = "black";
+                name.value = '';
+            }
+
+            if (email.value === "")
+            {
+                email.style.backgroundColor = "#c94f4f";
+                email.style.color = "white";
+                alert("Не введен email");
+
+            }
+            else {
+                email.style.backgroundColor = "white";
+                email.style.color = "black";
+                email.value = '';
+
+            }
+
+            if (phone.value === "")
+            {
+                phone.style.backgroundColor = "#c94f4f";
+                phone.style.color = "white";
+                alert("Не введен телефон");
+            }
+            else {
+                phone.style.backgroundColor = "white";
+                phone.style.color = "black";
+                phone.value = '';
+            }
+
+        }
+    </script>
+
+    <title>Заказать</title>
+</head>
+<body>
+<header>
+    <nav id="nav_menu_desc">
+        <ol style="padding: 20px 20px;">
+            <li style="background-color: white; border: 0px solid;">
+                <img src="images/logo.png" width="100" alt="logo"></li>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="kids.html">Малышам</a></li>
+            <li><a href="boys.html">Мальчикам</a></li>
+            <li><a href="girls.html">Девочкам</a></li>
+            <li><a href="#" style="color: deepskyblue">Заказать</a></li>
+        </ol>
+    </nav>
+</header>
+<div id="1block">
+    <form method="post">
+    <table style="margin-left: auto; margin-right: auto">
+        <tr>
+            <td><h1 style="font-family: Raleway-reg,sans-serif; font-size: xx-large; letter-spacing: 7px; text-align: center;">Заказать</h1></td>
+        </tr>
+        <tr>
+            <td><p style="font-family: Bahnschrift,sans-serif; text-align: center">Здесь вы можете произвести заказ наших товаров. Оставьте ваши контактные данные и пожелания и мы с вами свяжемся.</p></td>
+        </tr>
+        <tr>
+            <td><input type="text" name="name" id="name" placeholder="Введите ваше имя" value=""></td>
+        </tr>
+        <tr>
+            <td><input type="email" name="name" id="email" placeholder="Введите ваш email" value=""></td>
+        </tr>
+        <tr>
+            <td><input type="text" name="name" id="phone" placeholder="Введите ваш телефон" value=""></td>
+        </tr>
+        <tr>
+            <td>
+                <select name="type" id="type" style="width: 300px; height: 30px;text-align: center;">
+                    <option value="" disabled selected>Тип игрушки</option>
+                    <option value="boy" >Мальчикам</option>
+                    <option value="girl">Девочкам</option>
+                    <option value="kid">Малышам</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td><input type="button" name="name" id="sender" value="Отправить" onclick="check()"></td>
+        </tr>
+    </table>
+    </form>
+</div>
+
+<footer>
+    <p>Курсовая работа РТУ МИРЭА Бессмертных Иван ИКБО 30-20</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="src/jquery.js"></script>
+    <link rel="stylesheet" href="src/styles.css" type="text/css">
+    <link rel="icon" href="images/icon.png"
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+</head>
+<body>
+    <header>
+        <nav id="nav_menu_desc">
+            <ol style="padding-left: 0;">
+                <li style="background-color: white; border: 0px solid;">
+                    <img src="images/logo.png" width="100" alt="logo"></li>
+                <li><a href="#" style="color: deepskyblue">Главная</a></li>
+                <li><a href="kids.html">Малышам</a></li>
+                <li><a href="boys.html">Мальчикам</a></li>
+                <li><a href="girls.html">Девочкам</a></li>
+                <li><a href="order.html">Заказать</a></li>
+            </ol>
+        </nav>
+    </header>
+    <div id="first">
+        <picture>
+            <source media="(max-width: 700px)" srcset="images/index/1block_smaller_too.jpeg">
+            <source media="(max-width: 920px)" srcset="images/index/1block_smaller.jpeg">
+            <source media="(max-width: 2480px)" srcset="images/index/1block.jpeg">
+            <img src="images/index/1block.jpeg" alt="first block img" style="width:auto;">
+        </picture>
+        <table id="titling">
+            <tr><td><h3>ИГРУШКИ НА ЛЮБОЙ ВКУС</h3></td></tr>
+            <tr><td> <h1>ПИРАМИДКА</h1></td></tr>
+            <tr><td><p>Широчайшая коллекция игрушек для детей всех возрастов!</p></td></tr>
+        </table>
+        <div id="my_ban">
+            <p>У нас вы можете легко подобрать нужную Вам игрушку всего за несколько кликов</p>
+        </div>
+    </div>
+    <div id="2block">
+        <ul id="classes">
+            <li class="card">
+                <a href="boys.html"><img src="images/fon1.jpg" alt=""></a>
+                <p>Игрушки для мальчиков</p>
+            </li>
+            <li class="card">
+                <a href="girls.html"><img src="images/girls/toy1.jpg" alt=""></a>
+                <p>Игрушки для девочек</p>
+            </li>
+            <li class="card">
+                <a href="kids.html"><img src="images/fon.jpg" alt=""></a>
+                <p>Игрушки для малышей</p>
+            </li>
+        </ul>
+    </div>
+    <div id="bottom" style="text-align: center;">
+        <picture>
+            <source media="(max-width: 790px)" srcset="images/footer1.jpg">
+            <source media="(max-width: 2480px)" srcset="images/footer.jpg">
+            <img src="images/footer.jpg" alt="first block img" style="width:auto;">
+        </picture>
+        <table id="banner_bottom" >
+            <tr>
+                <td><h3 style="font-family: Bahnschrift, sans-serif">
+                    Не нашлось, что искали?
+                </h3></td>
+            </tr>
+            <tr>
+                <td><p>
+                    Мы всегда слушаем Вас. Обязательно оставляйте Ваши заявки и мы доставим Вам желаемую игрушку!
+                </p></td>
+            </tr>
+
+        </table>
+    </div>
+    <footer>
+        <p>Курсовая работа РТУ МИРЭА Бессмертных Иван ИКБО 30-20</p>
+    </footer>
+</body>
+</html>
